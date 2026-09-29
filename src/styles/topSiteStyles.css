@@ -1,9 +1,10 @@
 .main{
-    background-image: url("../images/topsiteBackground.jpg");
+    background-image: url("../images/topsite2.png");
     padding: 0%;
     background-position: bottom; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
+    background-position: center center;
     height: 130vh;
     width: 100vw;
 }
@@ -83,12 +84,22 @@
     }
 
     .collapsed-navbar{
-        height: 135px;
+        height: 155px;
         border: solid black;
         border-radius: 35px;
         padding: 1rem;
         background-color: #ECD1BA;
         opacity: 80%;
+    }
+
+    #col-2{
+        width: 0;
+        padding-right: 0;
+        margin: 2em;
+    }
+
+    #catalog{
+        height: 20px;
     }
 
 }

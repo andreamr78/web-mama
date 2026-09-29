@@ -27,6 +27,7 @@ function TopBar() {
                 <Nav.Link href="#travels">Destinos</Nav.Link>
                 <Nav.Link href="#catalog">Paquetes</Nav.Link>
                 <Nav.Link href="#socials">Contactanos</Nav.Link>
+                <Nav.Link href="https://viaje.ly/vm-travel-adventures">Ofertas</Nav.Link>
               </Nav>
             </Navbar.Collapse>
             </Col>

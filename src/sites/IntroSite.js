@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../styles/introStyles.css'
-import img1 from '../images/intro-img-1.png'
+import img1 from '../images/intro-img-1.jpeg'
 import img2 from '../images/intro-img-2.png'
 
 function IntroSite() {
@@ -23,6 +23,10 @@ function IntroSite() {
               Nos distinguimos por mantenernos en constante capacitación, lo que nos permite ofrecer asesoría especializada y soluciones personalizadas para cada viajero. Atendemos en español, inglés y lengua de señas mexicana, promoviendo una comunicación inclusiva y accesible. Además, brindamos el servicio de tramitación de visas de viajero a Estados Unidos (B1/B2), así como acompañamiento y preparación para la entrevista consular.
               <br/>  <br/>
               En VM Travel & Adventures no solo organizamos viajes: diseñamos experiencias con profesionalismo, cercanía y el orgullo de ser una agencia orgullosamente regiomontana.
+              <br/>  <br/>
+              En VM Travel & Adventures Agency hacemos maletas 🧳 llenas de sonrisas 
+              <br/>  <br/>
+              #SomosTuBoletoAlMundo
             </p>
           </Col>
         </Row>

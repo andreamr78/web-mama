@@ -9,13 +9,11 @@ function CatalogSite() {
   return (
     <div id='catalog'>
       <Container className='catalog-container' fluid>
-        <Row className='row-container'>
-          <Col>REVISA     <br/> NUESTROS      <br/>PAQUETES</Col>
-          <Col className="downloads">
-          <a href={catalogo}>  <i class="bi bi-download"></i></a>
+        <div className='row-container'>
+          Paquetes de viaje 
           <br/>
-          Descarga nuestro catálogo</Col>
-        </Row>
+          Revisa este <a href='https://www.exoticca.com/mx?advisor_token=victoria-magaly-rodriguez-sanchez-01a06366-7f1c-7377-9c58-730d1ddeddcf'>Link</a>
+        </div>
       </Container>
     </div>
   )

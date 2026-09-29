@@ -40,7 +40,7 @@ body {
     /* flex: 1; */
 }
 .nav-link{
-    margin-left: 6vw;
+    margin-left: 3.5vw;
     margin-top: -10px;
     color: black;
     text-transform: uppercase;
@@ -91,21 +91,28 @@ body {
 }
 
 #catalog{
-    background-image: url("../images/catalog-back.png");
+    background-image: url("../images/catalog-back.jpeg");
     padding: 0%;
     background-position: bottom; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
-    height: 110vh;
+    height: 90vh;
     width: 100vw;
+    margin-top: 2rem;
+}
+.row-container{
+    margin-top: 12rem;
 }
 
 .catalog-container{
-    color: #ECD1BA;
+    color: white;
     font-size: 5rem;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 1.8px;
     -webkit-text-stroke-color: black;
+    text-transform: uppercase;
+    text-align: center;
     display: flex;
+    align-items: center;
     justify-content: center; /* Centers horizontally */
 }
 
@@ -118,9 +125,6 @@ body {
     text-decoration: none;
 }
 
-.row-container{
-    margin-top: 20vh;
-}
 
 .socials-container{
     margin: 2rem;
@@ -158,6 +162,14 @@ body {
 
     .catalog-container{
         text-align: center;
+    }
+
+    #catalog{
+        height: 100vh;
+    }
+
+    .row-container{
+    margin-top: 8rem;
     }
 
     .google-form{
