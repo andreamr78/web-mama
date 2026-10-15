@@ -52,6 +52,7 @@
     }
     #col-2{
         width: 100%;
+        padding-right: 0;
     }
 
     #img1, #img2{
