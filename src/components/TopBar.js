@@ -1,42 +1,68 @@
-import React, { useState } from 'react'
+
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../images/logo.png'
-import '../styles/GlobalStyles.css'
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import logo from '../images/logo.png';
+import '../styles/GlobalStyles.css';
 
 function TopBar() {
   const [expanded, setExpanded] = useState(false);
+
+  const closeMenu = () => setExpanded(false);
+
   return (
-    <div className='menu'>
-        <Navbar expand="lg" 
-         expanded={expanded}
-         onToggle={next => setExpanded(next)} 
-        >
-          <Container fluid>
-          <Row className={`${expanded ? 'collapsed-navbar' : ' menu-row'}`} >
-            <Col className='col-1'>
-            <Navbar.Brand><img className='logo-menu' src={logo}/></Navbar.Brand>            
-            </Col>
-            <Col className='col-2'>
-              <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="#intro">Inicio</Nav.Link>
-                <Nav.Link href="#travels">Destinos</Nav.Link>
-                <Nav.Link href="#catalog">Paquetes</Nav.Link>
-                <Nav.Link href="#socials">Contactanos</Nav.Link>
-                <Nav.Link href="https://viaje.ly/vm-travel-adventures">Ofertas</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-            </Col>
-          </Row>
-          </Container>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" className='float-right'/>
-        </Navbar>
+    <div className="menu">
+      <Navbar
+        expand="lg"
+        expanded={expanded}
+        onToggle={(nextExpanded) => setExpanded(nextExpanded)}
+        className="custom-navbar"
+      >
+        <Container fluid className="navbar-inner">
+          <Navbar.Brand href="#intro" className="navbar-logo">
+            <img
+              className="logo-menu"
+              src={logo}
+              alt="VM Travel Adventures"
+            />
+          </Navbar.Brand>
+
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            aria-label="Toggle navigation"
+          />
+
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link href="#intro" onClick={closeMenu}>
+                Inicio
+              </Nav.Link>
+
+              <Nav.Link href="#travels" onClick={closeMenu}>
+                Destinos
+              </Nav.Link>
+
+              <Nav.Link href="#catalog" onClick={closeMenu}>
+                Paquetes
+              </Nav.Link>
+
+              <Nav.Link href="#socials" onClick={closeMenu}>
+                Contáctanos
+              </Nav.Link>
+
+              <Nav.Link
+                href="https://viaje.ly/vm-travel-adventures"
+                onClick={closeMenu}
+              >
+                Ofertas
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
     </div>
   );
 }
 
-export default TopBar
+export default TopBar;
