@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -41,6 +40,10 @@ function TopBar() {
 
               <Nav.Link href="#travels" onClick={closeMenu}>
                 Destinos
+              </Nav.Link>
+
+              <Nav.Link href="#internacionales" onClick={closeMenu}>
+                Internacionales
               </Nav.Link>
 
               <Nav.Link href="#catalog" onClick={closeMenu}>
