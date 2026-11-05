@@ -1,5 +1,4 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import logo from '../images/logo.png';
@@ -21,7 +20,7 @@ function TopSite() {
               <Col className='hashtag'>#TuInterpreteViajera</Col>
             </Row>
           </div>
-        <Row className='logo-col'><img className='logo' src={logo}/></Row>
+        <Row className='logo-col'><img className='logo' src={logo} alt="VM Travel Logo"/></Row>
     </div>
   )
 }

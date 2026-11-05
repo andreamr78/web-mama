@@ -1,5 +1,4 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import '../styles/introStyles.css'
@@ -12,8 +11,8 @@ function IntroSite() {
       <div className='intro-container'>
         <Row>
           <Col id='col-1' >
-            <img id='img1' src={img1}/>
-            <img id='img2' src={img2}/>
+            <img id='img1' src={img1} alt="VM Travel Intro 1"/>
+            <img id='img2' src={img2} alt="VM Travel Intro 2"/>
           </Col>
           <Col id='col-2' >
             <p className='title'>QUIENES SOMOS?</p>

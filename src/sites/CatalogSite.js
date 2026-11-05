@@ -1,9 +1,6 @@
 import React from 'react'
 import '../styles/GlobalStyles.css'
 import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import catalogo from '../pdf/catalogo.pdf'
 
 function CatalogSite() {
   return (
